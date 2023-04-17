@@ -4,6 +4,8 @@ namespace FilmesAPI.Models;
 
 public class Filme
 {
+	public int Id { get; set; }
+
 	//prop é um atalho para criar atributo
 	[Required(ErrorMessage = "O título do filme é obrigatório")] //Deixando o campo obrigatório
 	[MaxLength(50, ErrorMessage = "O titulo do filme não pode exceder 50 caracteres")]
@@ -18,5 +20,5 @@ public class Filme
 	public int Duracao { get; set; }
 
 	public string Diretor { get; set; }
-
+	
 }
