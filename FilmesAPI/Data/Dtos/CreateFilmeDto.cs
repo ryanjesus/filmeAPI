@@ -1,22 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FilmesAPI.Models;
+namespace FilmesAPI.Data.Dtos;
 
-public class Filme
+public class CreateFilmeDto
 {
-	//Comando para realizar o Migration no gereciador de pacotes -> Add-Migration "Nome da tabela"
-	//Para criar tabela automaticamente usa o comando Update-Database
-	[Key]
-	[Required]
-	public int Id { get; set; }
 
 	//prop é um atalho para criar atributo
 	[Required(ErrorMessage = "O título do filme é obrigatório")] //Deixando o campo obrigatório
-	[MaxLength(50, ErrorMessage = "O titulo do filme não pode exceder 50 caracteres")]
+	[StringLength(50, ErrorMessage = "O titulo do filme não pode exceder 50 caracteres")]
 	public string Titulo { get; set; }
 
 	[Required(ErrorMessage = "O título do gênero é obrigatório")]
-	[MaxLength(50, ErrorMessage = "O tamanho do gênero não pode exceder 50 caracteres")]
+	[StringLength(50, ErrorMessage = "O tamanho do gênero não pode exceder 50 caracteres")]
 	public string Genero { get; set; }
 
 	[Required(ErrorMessage = "A duração do filme é obrigatório")]
@@ -25,5 +20,4 @@ public class Filme
 
 	[Required(ErrorMessage = "O nome do Diretor é obrigatório")]
 	public string Diretor { get; set; }
-	
 }

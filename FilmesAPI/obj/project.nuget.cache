@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eK4e0z8FtgGw7Vh71RN8xxvJ/hSm+B7sa8QWOtQ3Y50GGsbC8l+mVJbjixGswxHH7aJ3hdijnqKzC2Q72HSAnA==",
+  "dgSpecHash": "pvwBaOKDZo9OLbAb3tPkfMbubQchstb+0s80YBy6iLSwNzdO3VAOrlhIuXP1QQ4/C1y2wLInbw6WUCdAO8ikAg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
