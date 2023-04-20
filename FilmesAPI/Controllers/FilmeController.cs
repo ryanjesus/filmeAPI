@@ -23,8 +23,15 @@ public class FilmeController : ControllerBase
 		_mapper = mapper;
 	}
 
+	/// <summary>
+	/// Adiciona um filme ao banco de dados
+	/// </summary>
+	/// <param name="filmeDto">Objeto com os campos necessários para criação de um filme</param>
+	/// <returns>IActionResult</returns>
+	/// <response code="201">Caso inserção seja feita com sucesso</response>
 	[HttpPost]
-	public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto) //O tipo é void pq n vou me preocupar com o retorno
+	[ProducesResponseType(StatusCodes.Status201Created)]
+	public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto)
 													  //Estamos recebendo o filme atraves do parametro	
 	{
 		Filme filme = _mapper.Map<Filme>(filmeDto);
