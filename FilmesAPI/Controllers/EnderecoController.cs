@@ -1,7 +1,4 @@
 ﻿using AutoMapper;
-using FilmesApi.Data.Dtos;
-using FilmesApi.Data;
-using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using FilmesAPI.Data.Dtos;
 using FilmesAPI.Data;
@@ -16,9 +13,9 @@ namespace FilmesApi.Controllers
 		private FilmeContext _context;
 		private IMapper _mapper;
 
-		public EnderecoController(FilmeContext context, IMapper mapper)
+		public EnderecoController(FilmeContext context, IMapper mapper) //Construtor
 		{
-			_context = context;
+			_context = context;  //Dependencias
 			_mapper = mapper;
 		}
 
