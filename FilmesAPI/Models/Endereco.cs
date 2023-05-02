@@ -15,3 +15,4 @@ namespace FilmesAPI.Models
 		public virtual Cinema Cinema { get; set; }
 	}
 }
+
