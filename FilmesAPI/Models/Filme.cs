@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections;
+using System.ComponentModel.DataAnnotations;
 
 namespace FilmesAPI.Models;
 
@@ -25,5 +26,7 @@ public class Filme
 
 	[Required(ErrorMessage = "O nome do Diretor é obrigatório")]
 	public string Diretor { get; set; }
-	
+
+	public virtual ICollection<Sessao> Sessoes { get; set; }
+
 }
