@@ -2,16 +2,18 @@
 using FilmesAPI.Data.Dtos;
 using FilmesAPI.Models;
 
-namespace FilmesAPI.Profiles
+namespace FilmesAPI.Profiles;
+
+public class CinemaProfile : Profile
 {
-	public class CinemaProfile : Profile
+	public CinemaProfile()
 	{
-		public CinemaProfile()
-		{
-			CreateMap<CreateCinemaDto, Cinema>();
-			CreateMap<Cinema, ReadCinemaDto>().ForMember(Cinemadto => Cinemadto.Endereco, opt => opt.MapFrom(cinema =>
-			cinema.Endereco));
-			CreateMap<UpdateCinemaDto, Cinema>();
-		}
+		CreateMap<CreateCinemaDto, Cinema>();
+		CreateMap<Cinema, ReadCinemaDto>()
+		.ForMember(cinemaDto => cinemaDto.Sessoes,
+			opt => opt.MapFrom(cinema => cinema.Sessoes))
+		.ForMember(cinemaDto => cinemaDto.Endereco,
+			opt => opt.MapFrom(cinema => cinema.Endereco));
+		CreateMap<UpdateCinemaDto, Cinema>();
 	}
 }
